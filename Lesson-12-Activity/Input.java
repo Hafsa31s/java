@@ -9,23 +9,28 @@ class Input{
     public static Scanner sc = new Scanner(System.in);
     public static int readInt(){
         int data = sc.nextInt();
-        sc.nextLine();//Clear the trailing carriage return
+        sc.nextLine();
         return data;
     }
+
     public static double readDouble(){
         double data = sc.nextDouble();
-        sc.nextLine();//Clear the trailing carriage return
+        sc.nextLine();
         return data;
     }
+
     public static String readString(){
         return sc.nextLine();
     }
+
     public static char readChar(){
         return sc.nextLine().charAt(0);
     }
+
     public static boolean readBoolean(){
         return sc.nextBoolean();
     }
+
     public static String readFile(String fn){
         String file = "";
         try{
@@ -35,6 +40,7 @@ class Input{
         }
         return  file;
     }
+    
     /*
     public static ArrayList<Row> readCSV(String fn){
         ArrayList<Row> data =  new ArrayList<>();
